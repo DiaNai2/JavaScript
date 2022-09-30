@@ -1,0 +1,26 @@
+body{
+    background-image:url(https://us.123rf.com/450wm/nackthanakorn/nackthanakorn2004/nackthanakorn200400136/145602981-color-degradado-blanco-y-gris-abstracto-dise%C3%B1o-moderno-del-vector-del-dise%C3%B1o-del-fondo-illustration-.jpg?ver=6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+}
+div{
+    width: 25%;
+    height: 40%;
+    background-image: url(https://www.revistaneo.com/sites/default/files/inline-images/fondos-padres.jpg);
+    background-repeat: no-repeat;
+    padding: 3%;
+    margin-top: 8%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+button{
+    width:200px;
+	font-weight:bold;
+	display:inline-block;
+    margin: 3%;
+    font-size: 20px;
+}

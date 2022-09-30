@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+		<form  class="formulario" id="formulario">
+
+			 <div class="formulario_grupo" id="grupo_tdocumento">
+				<label for="tdocumento" class="formulario__label">Tipo Documento</label>
+				<div class="formulario__grupo-input">
+                    <select name="tdocumento" id="tdocumento" class="formulario__input">
+                        <option value="">Seleccione</option>
+                        <option value="tt">Tarjeta de identidad</option>
+                        <option value="cc">Cedula de ciudadania</option>
+                        <option value="pp">Pasaporte</option>
+                    </select>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Selecciona el tipo de documento.</p>
+			</div>
+
+
+
+
+			<div class="formulario_grupo" id="grupo_ndocumento">
+				<label for="ndocumento" class="formulario__label">Número documento</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="ndocumento" id="ndocumento" placeholder="ingrese su numero de documento">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+
+			<div class="formulario_grupo" id="grupo_nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="nombre ">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+
+			<div class="formulario_grupo" id="grupo_apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="apellido">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+
+
+			<div class="formulario_grupo" id="grupo_fecha">
+				<label for="fecha" class="formulario__label">Fecha de nacimiento</label>
+				<div class="formulario__grupo-input">
+					<input type="date" class="formulario__input" name="fecha" id="fecha">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debes ser mayor de edad.</p>
+			</div>
+
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario_grupo" id="grupo_correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="correo" id="correo" placeholder="correo">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario_grupo" id="grupo_password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario_grupo" id="grupo_password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario_grupo" id="grupo_terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+            
+			<div class="formulario_mensaje" id="formulario_mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario_grupo formulario_grupo-btn-enviar">
+				<button type="submit" class="form-boton">Enviar</button>
+				<p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="validaciones.js"></script>
+</html>
